@@ -1,0 +1,37 @@
+
+.ecom-wishlist-fab{position:fixed;right:22px;bottom:22px;z-index:9998;background:#425a8b;color:#fff;border-radius:999px;padding:12px 17px;font:600 14px 'DM Sans',sans-serif;box-shadow:0 8px 24px #1d31522b;text-decoration:none;display:flex;gap:9px;align-items:center}
+.ecom-wishlist-fab b{background:#ff9b55;color:#fff;border-radius:99px;min-width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:12px}
+.ecom-heart-btn{position:absolute;right:12px;top:12px;z-index:5;border:1px solid #dbe3f0;background:#fff;border-radius:50%;width:38px;height:38px;font-size:21px;cursor:pointer;color:#425a8b;display:grid;place-items:center;box-shadow:0 2px 8px #0000000d}
+.ecom-heart-btn.is-saved{color:#e34c65}.ecom-wishlist-action{border:0;border-radius:4px;background:#425a8b;color:#fff;padding:10px 15px;cursor:pointer;font-weight:700}.ecom-wishlist-action:hover{background:#ff9b55}
+.ecom-toast{position:fixed;right:22px;top:24px;z-index:10000;background:#183d32;color:white;padding:13px 18px;border-radius:7px;box-shadow:0 8px 24px #0002;font:600 14px 'DM Sans',sans-serif}
+.ecom-wishlist-shell{max-width:1440px;width:92%;margin:36px auto 70px;color:#425a8b;font-family:'DM Sans',sans-serif}
+.ecom-wishlist-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:24px}
+.ecom-wishlist-heading h1{font-size:34px;font-weight:700;color:#243b65;margin:0}
+.ecom-wishlist-layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:28px}
+.ecom-category-sidebar{border:1px solid #dbe3f0;border-radius:6px;padding:20px;height:max-content;background:#fff}
+.ecom-category-sidebar h2{font-size:18px;font-weight:700;margin:0 0 14px;color:#243b65}
+.ecom-category-sidebar a{display:block;text-decoration:none;color:#526789;padding:10px 0;border-bottom:1px solid #edf1f6}
+.ecom-category-sidebar a:hover{color:#ff9b55}
+.ecom-wishlist-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.ecom-wishlist-card{border:1px solid #dbe3f0;border-radius:7px;padding:15px;position:relative;min-width:0;background:#fff}
+.ecom-wishlist-card .ecom-wish-select{position:absolute;left:14px;top:14px;width:19px;height:19px;z-index:2;accent-color:#425a8b}
+.ecom-wishlist-card img{width:100%;height:190px;object-fit:contain;margin-bottom:14px}
+.ecom-wishlist-card h3{font-size:16px;font-weight:700;margin:0 0 8px;color:#243b65}
+.ecom-wishlist-card .ecom-wish-price{font-size:18px;font-weight:700;margin:0 0 14px}
+.ecom-wishlist-card .ecom-wish-link{color:inherit;text-decoration:none}
+.ecom-wishlist-card .ecom-wish-remove{background:#fff;border:1px solid #d9e1ec;color:#b33a49;border-radius:4px;padding:9px 12px;cursor:pointer;font-weight:700;width:100%}
+.ecom-wishlist-card .ecom-wish-remove:hover{background:#fff2f3}
+.ecom-wishlist-empty{grid-column:1/-1;border:1px dashed #cbd5e1;border-radius:8px;text-align:center;padding:54px 20px;background:#fff}
+.ecom-wishlist-empty h2{font-size:22px;font-weight:700;margin:0 0 8px;color:#243b65}
+.ecom-wishlist-empty p{margin:0 0 18px;color:#64748b}
+.ecom-select-all-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.ecom-select-all-row label{display:flex;align-items:center;gap:8px;font-weight:700;cursor:pointer}
+.ecom-select-all-row input{accent-color:#425a8b;width:18px;height:18px}
+.ecom-remove-selected{background:#c53d4c;color:#fff;border:0;border-radius:4px;padding:10px 14px;font-weight:700;cursor:pointer}
+.ecom-remove-selected:disabled{opacity:.45;cursor:not-allowed}
+.ecom-preloader{position:fixed;inset:0;z-index:10001;background:#fff;display:grid;place-items:center;transition:opacity .25s,visibility .25s}
+.ecom-preloader:after{content:'';width:44px;height:44px;border:4px solid #dce5f1;border-top-color:#ff9b55;border-radius:50%;animation:ecom-spin .7s linear infinite}
+.ecom-preloader.ecom-loaded{opacity:0;visibility:hidden;pointer-events:none}
+@keyframes ecom-spin{to{transform:rotate(360deg)}}
+@media(max-width:900px){.ecom-wishlist-layout{grid-template-columns:1fr}.ecom-category-sidebar{display:none}.ecom-wishlist-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.ecom-wishlist-shell{width:94%;margin-top:22px}.ecom-wishlist-heading h1{font-size:27px}.ecom-wishlist-grid{grid-template-columns:1fr}.ecom-wishlist-card img{height:220px}.ecom-wishlist-fab{right:12px;bottom:12px}}

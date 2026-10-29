@@ -1,0 +1,1 @@
+// Vite entry point. Laravel Vite's refresh option reloads the browser when Blade views change.

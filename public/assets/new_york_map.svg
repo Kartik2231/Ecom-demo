@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%">
+  <!-- Background / Water -->
+  <rect width="1000" height="800" fill="#aadaff" />
+
+  <!-- Landmasses - Simplified shapes for New Jersey, Manhattan, Long Island, Staten Island -->
+  <!-- New Jersey / West Landmass -->
+  <path d="M 0,0 L 450,0 L 430,200 L 480,300 L 420,400 L 320,420 L 330,550 L 250,600 L 280,750 L 150,800 L 0,800 Z" fill="#e4f4d4" stroke="#c0dcc0" stroke-width="2"/>
+  
+  <!-- Staten Island -->
+  <path d="M 330,560 Q 360,540 400,580 Q 420,630 380,680 Q 310,680 300,620 Z" fill="#e4f4d4" stroke="#c0dcc0" stroke-width="2"/>
+  
+  <!-- Manhattan -->
+  <path d="M 470,120 L 510,110 L 460,330 L 435,320 Z" fill="#f6f3e7" stroke="#dcd8c0" stroke-width="2"/>
+
+  <!-- Long Island / Brooklyn / Queens -->
+  <path d="M 480,340 Q 550,330 650,350 Q 800,320 1000,310 L 1000,600 L 750,630 Q 600,630 460,540 Q 430,460 480,340 Z" fill="#e4f4d4" stroke="#c0dcc0" stroke-width="2"/>
+  
+  <!-- Bronx / North Landmass -->
+  <path d="M 460,0 L 1000,0 L 1000,300 Q 750,300 650,280 L 520,100 L 460,110 Z" fill="#e4f4d4" stroke="#c0dcc0" stroke-width="2"/>
+
+  <!-- Major Road Networks (Lines) -->
+  <g stroke="#ffffff" stroke-width="4" fill="none" opacity="0.8">
+    <!-- Main Highway Grid Lines -->
+    <path d="M 100,0 C 150,200 200,400 280,800" stroke="#f6b26b" stroke-width="5" />
+    <path d="M 0,380 C 200,370 400,320 500,320 C 600,320 800,450 1000,450" stroke="#f6b26b" stroke-width="5" />
+    <path d="M 400,0 C 420,200 450,300 450,500" stroke="#f6b26b" stroke-width="3" />
+    <path d="M 500,110 C 550,250 650,350 900,400" />
+    <path d="M 200,200 L 800,200" />
+    <path d="M 300,500 L 700,550" />
+  </g>
+
+  <!-- Labels -->
+  <g font-family="Arial, sans-serif" font-weight="bold" fill="#444444" text-anchor="middle">
+    <text x="470" y="410" font-size="28" fill="#222222">Thành phố<tspan x="470" dy="30">New York</tspan></text>
+    <text x="280" y="490" font-size="18">Newark</text>
+    <text x="250" y="240" font-size="16" font-weight="normal">Montclair</text>
+    <text x="630" y="120" font-size="18">Yonkers</text>
+    <text x="830" y="380" font-size="16" font-weight="normal">Garden City</text>
+    <text x="820" y="660" font-size="16" font-weight="normal">Long Beach</text>
+  </g>
+
+  <!-- Google Map Card Overlay (Top Left) -->
+  <g transform="translate(30, 40)">
+    <rect width="400" height="120" rx="8" fill="#ffffff" box-shadow="0 2px 6px rgba(0,0,0,0.3)" filter="drop-shadow(0px 4px 5px rgba(0,0,0,0.15))" />
+    <!-- White bar/input placeholder -->
+    <line x1="20" y1="40" x2="380" y2="40" stroke="#e0e0e0" stroke-width="2" />
+    <!-- Red Pin Icon -->
+    <path d="M 40,65 C 40,50 60,50 60,65 C 60,80 40,95 40,95 C 40,95 20,80 20,65 C 20,50 40,50 40,65 Z" fill="#ea4335" transform="translate(10, -5) scale(0.7)" />
+    <circle cx="38" cy="52" r="4" fill="#ffffff" />
+    <!-- Blue Text Link -->
+    <text x="75" y="85" font-family="Arial, sans-serif" font-size="14" fill="#1a73e8">Tùy chọn khác</text>
+  </g>
+</svg>
